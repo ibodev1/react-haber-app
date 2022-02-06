@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  background-color: #323232;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  box-shadow: 3px 3px 1px #ccc;
+  -webkit-box-shadow: 3px 3px 1px #ccc;
+  -moz-box-shadow: 3px 3px 1px #ccc;
+}
+
+.slider {
+  width: 100%;
+  height: 450px;
+  max-height: 450px;
+  min-height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider .haber_link {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  max-height: 110px;
+}
+.slider .haber_link::before {
+  content: "";
+  width: 150px;
+  height: 40px;
+  background: #ef4444;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.swiper-container {
+  width: 500px;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-wrapper {
+  padding-inline-start: 0;
+}
+
+.swiper-button-prev {
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("../img/left-arrow.svg");
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-image: url("../img/right-arrow.svg");
+  cursor: pointer;
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}
+
+.swiper-pagination {
+  display: flex;
+  width: 100%;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.swiper-pagination-bullet-active {
+  background-color: #ef4444;
+  opacity: 1;
+}
+
+.haber .haber-title {
+  overflow: hidden;
+}
+
+.hata {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+
+.uyari {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.karart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.short_haber {
+  min-width: 250px;
+}
+.shortNews h2 {
+  padding-left: 10px;
+}
+.shortNews ul {
+  padding: 10px;
+}
