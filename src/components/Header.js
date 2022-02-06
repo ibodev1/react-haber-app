@@ -24,7 +24,7 @@ function Header(props) {
           to="/"
           className="lg:text-lg bg-red-400 dark:bg-red-600 p-2.5 my-2 mx-1 lg:my-2 lg:mx-2 rounded-lg hover:underline"
         >
-          𐰏𐰰𐱅𐰇𐰼𐰚 𐰴𐰋𐰼
+          Ana Sayfa
         </Link>
         <Link
           to="/top"
